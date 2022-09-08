@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Login form</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./assets/images/logo.svg">
+        </div>
+    </header>
+
+    <div class="container">
+        <form class="formulario">
+            <div class="titulo">
+                <img src="./assets/images/log-in.svg">
+                <h1>Faça seu login</h1>
+            </div>
+
+            <div class="subtitulo">
+                <p>Entre com suas informações de cadastro</p>
+            </div>
+
+            <div class="campo-email">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="campo-senha">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" minlength="8" required>
+                <button id="show-hide" type="button">
+            </div>
+
+            <div class="suporte">
+                <div class="lembre-me">
+                    <input type="checkbox" id="lembrar">
+                    <label>Lembre-me</label>
+                </div>
+                
+                <a class="esqueceu-senha" href="#">Esqueci minha senha</a>
+            </div>
+
+            <div class="botao">
+                <button type="submit" id="btn-enviar">ENTRAR</button>
+            </div>
+
+            <div class="cadastrar">
+                <p>Não tem uma conta?</p>
+                <a href="#">Registre-se</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>

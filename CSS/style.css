@@ -1,0 +1,347 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    background-image: url('../assets/images/side-image.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+
+}
+
+header.cabecalho {
+    width: 50%;
+    height: 50px;
+    padding: 40px 60px;
+}
+
+.logo {
+    height: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 520px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--form-background);
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.formulario {
+    width: 65%;
+    height: 80%;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--text-title);
+    font-size: 1.4rem;
+    margin-left: 5px;
+}
+
+.subtitulo {
+    margin-top: 10px;
+}
+
+.subtitulo p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--text-base);
+    font-size: 1rem;
+}
+
+.campo-email {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-email label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 500;
+    color: var(--text-base);
+    font-size: 1rem;
+    margin-bottom: 2px;
+    width: 60px;
+}
+
+.campo-email input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid var(--text-base);
+    background-color: transparent;
+    color: var(--text-base);
+    font-size: 1rem;
+    padding: 10px;
+    padding-left: 40px;
+    background-image: url('../assets/images/mail.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    outline: none;
+}
+
+.campo-email input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--text-base);
+    font-size: 0.8rem;
+}
+
+.campo-email input:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: transparent;
+    background-image: url('../assets/images/mail-focus.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.campo-senha {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.campo-senha label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 500;
+    color: var(--text-base);
+    font-size: 1rem;
+    margin-bottom: 2px;
+    width: 60px;
+}
+
+.campo-senha input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid var(--text-base);
+    background-color: transparent;
+    color: var(--text-base);
+    font-size: 1rem;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 50px;
+    background-image: url('../assets/images/lock.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    outline: none;
+}
+
+.campo-senha input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--text-base);
+    font-size: 0.8rem;
+}
+
+.campo-senha input:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: transparent;
+    background-image: url('../assets/images/lock-focus.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.campo-senha button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    background-image: url('../assets/images/close-eye.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.suporte {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lembre-me {
+    position: relative;
+    height: 20px;
+}
+
+.lembre-me input {
+    appearance: none;
+}
+
+.lembre-me label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--text-base);
+    font-size: 1.1rem;
+    margin-left: 25px;
+}
+
+.lembre-me input::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-base);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lembre-me input:checked::before {
+    background-color: var(--primary-color);
+    background-image: url('../assets/images/check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.esqueceu-senha {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.botao button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cadastrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cadastrar p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.cadastrar a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    margin-left: 3px;
+}
+
+
+/*Responsivo*/
+@media screen and (max-width: 1350px) {
+
+    .container {
+        width: 450px;
+        left: 60px;
+    }
+
+    form.formulario {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+
+    header.cabecalho {
+        padding: 40px 10px;
+    }
+
+    .container {
+        width: 450px;
+        left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        background-image: none;
+    }
+
+    .container {
+        position: static;
+        transform: translateY(0);
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        width: 380px;
+    }
+
+    form.formulario {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    header.cabecalho {
+        padding: 40px
+    }
+
+    .container {
+        width: 315px;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    form.formulario {
+        width: 100%;
+    }
+}
